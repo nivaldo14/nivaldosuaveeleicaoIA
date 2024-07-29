@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanha Política - Paranaguá</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+            /*background-image: url('imgs/pgua1.jpg'); Substitua pela URL da imagem de fundo da cidade */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /*background-image: url('imgs/pgua1.jpg');  Substitua pela URL da imagem semi-transparente */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            /* Ajuste a opacidade para obter a transparência desejada */
+            z-index: -1;
+            /* Certifique-se de que está atrás dos outros elementos */
+        }
+
+        header {
+            background-color: rgba(0, 86, 179, 0.8);
+            /* Cor de fundo com transparência */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            border-bottom: 5px solid #003d7a;
+            position: relative;
+            z-index: 1;
+            /* Garantir que o header esteja sobre a imagem de fundo */
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+            /* Permitir posicionamento absoluto dentro */
+            background-image: url('https://media.istockphoto.com/id/458468939/pt/foto/paranagu%C3%A1.jpg?s=612x612&w=0&k=20&c=sgv0HWJ9P8_HtkDHqTlLpLZ7Iiey306Q9fMkMAz9XNs=');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            /* Fundo branco com transparência para o container */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding-bottom: 220px;
+            /* Espaço suficiente para a imagem de fundo */
+        }
+
+        .candidate {
+            background: rgba(255, 255, 255, 0.9);
+            /* Fundo branco com transparência */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .candidate img {
+            max-width: 100%;
+            /* height: auto; */
+            max-width: 250px; 
+            max-height: 200px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .candidate h2 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .candidate p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #003d7a;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            margin: 10px;
+            max-width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+    <header>
+        Campanha Política - Paranaguá
+    </header>
+    <div class="container">
+        <!-- Seções dos Candidatos -->
+        <div class="row">
+            <!-- Candidato a Vereador Nivaldo Suave - Foto 1 -->
+            <div class="column">
+                <div class="candidate">
+                    <h2>Candidato a Vereador: Nivaldo Suave</h2>
+                    <img src="/imgs/foptonivaldo.PNG" alt="Nivaldo Suave - Foto 1">
+                    <p>Conheça Nivaldo Suave, nosso candidato a vereador com um compromisso firme com o desenvolvimento
+                        de Paranaguá. Nivaldo tem uma visão clara para melhorar a qualidade de vida dos cidadãos e
+                        promover a justiça social.</p>
+                    <a href="#" class="button">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- Candidato a Vereador Nivaldo Suave - Foto 2 -->
+            <div class="column">
+                <div class="candidate">
+                    <img src="nivaldo-suave-2.jpg" alt="Nivaldo Suave - Foto 2">
+                    <p>Outra visão de Nivaldo Suave, mostrando seu envolvimento e dedicação à nossa cidade. Com
+                        experiência e paixão, ele está pronto para fazer a diferença.</p>
+                    <a href="#" class="button">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- Candidato a Prefeito Maranhã -->
+            <div class="column">
+                <div class="candidate">
+                    <h2>Candidato a Prefeito: Maranhã</h2>
+                    <img src="maranha.jpg" alt="Maranhã - Candidato a Prefeito">
+                    <p>Maranhão é o nosso candidato a prefeito, com uma visão inovadora para transformar Paranaguá. Ele
+                        é conhecido por seu compromisso com o progresso e bem-estar da cidade.</p>
+                    <a href="#" class="button">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
